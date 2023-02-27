@@ -1,6 +1,23 @@
 [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] [![FOSSA Status][fossa-img]][fossa]
 
-# Jaeger UI
+# Jaeger UI - TraceAsBPMNChoreographyDiagram Extension
+
+This extension to the JaegerUI adds the ability to visualize the trace of an event-driven, choreographically controlled microservices application as a BPMN choreography diagram. To convert the trace into a BPMN choreography diagram XML, the [backend application](https://github.com/gerbeu/EventsTraceToBPMNChorConverter/tree/a87c694da3bc5dcb17f1ea92268565704146026f) is used. To model the generated XML, the NavigatedViewer of the library [chor-js](https://github.com/bptlab/chor-js) is used.
+
+## Requirements
+In order to be able to analyze the trace, the following [backend application](https://github.com/gerbeu/EventsTraceToBPMNChorConverter/tree/a87c694da3bc5dcb17f1ea92268565704146026f) must be running: 
+
+## Use Cases
+
+![JaegerUIErweiterung](https://user-images.githubusercontent.com/74001567/221686903-3ea123dd-c299-49f0-9ffd-260f764ef10f.svg)
+
+## Screenshots
+The following screenshots show examples of the output generated for the instrumented [IBM microservices application](https://ibm-cloud-architecture.github.io/eda-saga-choreography/#implementation-explanation), which can be accessed [here](https://github.com/gerbeu/bachelor-thesis-resources).
+
+![jaeger-ui-topics-tabelle](https://user-images.githubusercontent.com/74001567/221687133-c0cbf1ea-9e41-41f1-8423-71e3526efbb3.png)
+
+![jaeger-ui-bpmn-chor](https://user-images.githubusercontent.com/74001567/221687124-f965fcd8-4dd9-4834-a3e8-8de5f9c8a88f.png)
+
 
 Visualize distributed tracing with Jaeger.
 
